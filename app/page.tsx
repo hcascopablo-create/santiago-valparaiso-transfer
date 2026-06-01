@@ -1,65 +1,250 @@
-import Image from "next/image";
+
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main>
+
+      
+
+      <section
+        className="relative min-h-screen bg-cover bg-center"
+        style={{
+          backgroundImage: "url('/hero.jpg')",
+        }}
+      >
+      
+       <div className="absolute inset-0 bg-black/40"></div>
+
+        {/* HEADER */}
+
+        <header className="relative z-20">
+          <div className="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
+
+            <div>
+              <h1 className="font-bold text-xl text-white">
+                SANTIAGO
+              </h1>
+              <p className="text-sm text-white">
+                VALPARAISO TRANSFER
+              </p>
+            </div>
+
+            <div className="font-semibold text-white">
+              +56 9 3236 0009
+            </div>
+
+          </div>
+        </header>
+
+        {/* CONTENT */}
+
+        <div className="relative z-10 max-w-7xl mx-auto px-8 py-16">
+
+          <div className="grid lg:grid-cols-2 gap-16 items-start">
+
+            {/* LEFT SIDE */}
+
+            <div className="pt-12">
+
+              <p className="uppercase tracking-widest text-white font-semibold">
+                Private Transfer
+              </p>
+
+              <h2 className="mt-4 text-5xl md:text-7xl font-bold text-white leading-tight">
+                Between
+                <br />
+                Santiago &
+                <br />
+                Valparaíso
+              </h2>
+
+              <p className="mt-8 text-xl text-white max-w-xl">
+                Safe. Comfortable. Fixed price.
+                Private transportation between Santiago and
+                Valparaíso for up to 4 passengers.
+              </p>
+
+              <div className="mt-12 grid grid-cols-2 gap-6 max-w-lg">
+
+                <div>
+                  <p className="text-white">Private Vehicle</p>
+                </div>
+
+                <div>
+                  <p className="text-white">24/7 Service</p>
+                </div>
+
+                <div>
+                  <p className="text-white">4 Passengers</p>
+                </div>
+
+                <div>
+                  <p className="text-white">4 Suitcases</p>
+                </div>
+
+              </div>
+
+            </div>
+
+            {/* BOOKING CARD */}
+
+            <div className="bg-white rounded-3xl shadow-2xl p-8 max-w-lg w-full ml-auto">
+
+              <h3 className="text-3xl font-bold">
+  Book Your Transfer
+</h3>
+
+<p className="text-gray-500 mt-2 mb-8">
+  Santiago ↔ Valparaíso • Private Service
+</p>
+
+              <div className="space-y-4">
+
+                <input
+                  type="text"
+                  placeholder="Pickup Hotel / Airbnb"
+                  className="w-full border rounded-xl p-4"
+                />
+
+                <select className="w-full border rounded-xl p-4">
+                  <option>Santiago → Valparaíso</option>
+                  <option>Valparaíso → Santiago</option>
+                </select>
+
+                <div className="grid grid-cols-2 gap-4">
+
+                  <input
+                    type="date"
+                    className="border rounded-xl p-4"
+                  />
+
+                  <input
+                    type="time"
+                    className="border rounded-xl p-4"
+                  />
+
+                </div>
+
+                <div className="grid grid-cols-2 gap-4">
+
+                  <select className="border rounded-xl p-4">
+                    <option>1 Passenger</option>
+                    <option>2 Passengers</option>
+                    <option>3 Passengers</option>
+                    <option>4 Passengers</option>
+                  </select>
+
+                  <select className="border rounded-xl p-4">
+                    <option>1 Suitcase</option>
+                    <option>2 Suitcases</option>
+                    <option>3 Suitcases</option>
+                    <option>4 Suitcases</option>
+                  </select>
+
+                </div>
+
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  className="w-full border rounded-xl p-4"
+                />
+
+                <input
+                  type="email"
+                  placeholder="Email"
+                  className="w-full border rounded-xl p-4"
+                />
+
+                <input
+                  type="text"
+                  placeholder="WhatsApp Number"
+                  className="w-full border rounded-xl p-4"
+                />
+
+              </div>
+
+              <div className="mt-8 flex justify-between items-center">
+
+                <div>
+                  <p className="text-sm text-gray-500">
+                    Fixed Price
+                  </p>
+
+                 <p className="text-5xl font-bold text-blue-700">
+  USD 150
+</p>
+
+<p className="text-sm text-gray-500">
+  Per vehicle • Up to 4 passengers
+</p>
+                </div>
+
+              </div>
+
+              <a
+  href="/review"
+  className="block text-center w-full mt-6 bg-slate-900 hover:bg-slate-800 text-white py-4 rounded-xl font-bold"
+>
+  Check Availability
+</a>
+
+            </div>
+
+          </div>
+
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+
+      </section>
+      <footer className="bg-slate-900 text-white py-16">
+  <div className="max-w-7xl mx-auto px-8">
+
+    <div className="grid md:grid-cols-3 gap-10">
+
+      <div>
+        <h3 className="font-bold text-xl mb-4">
+          Santiago Valparaíso Transfer
+        </h3>
+
+        <p className="text-gray-300">
+          Private transportation between
+          Santiago and Valparaíso.
+        </p>
+      </div>
+
+      <div>
+        <h3 className="font-bold mb-4">
+          Service
+        </h3>
+
+        <ul className="space-y-2 text-gray-300">
+          <li>Santiago → Valparaíso</li>
+          <li>Valparaíso → Santiago</li>
+          <li>24/7 Availability</li>
+          <li>Private Transfer</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 className="font-bold mb-4">
+          Contact
+        </h3>
+
+        <p>WhatsApp</p>
+        <p>+56 9 3236 0009</p>
+      </div>
+
     </div>
+
+  </div>
+</footer>
+
+<a
+  href="https://wa.me/56932360009"
+  target="_blank"
+  className="fixed bottom-6 right-6 bg-green-500 text-white px-6 py-4 rounded-full shadow-xl font-bold z-50"
+>
+  WhatsApp
+</a>
+    </main>
   );
 }
