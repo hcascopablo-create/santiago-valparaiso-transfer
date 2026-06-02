@@ -3,7 +3,6 @@
 export default function Home() {
   return (
     <main>
-
       
 
       <section
@@ -100,80 +99,66 @@ export default function Home() {
 
               <div className="space-y-4">
 
-                <input
-                  type="text"
-                  placeholder="Pickup Hotel / Airbnb"
-                  className="w-full border rounded-xl p-4"
-                />
+                
 
-                <select className="w-full border rounded-xl p-4">
-                  <option>Santiago → Valparaíso</option>
-                  <option>Valparaíso → Santiago</option>
-                </select>
+  <input
+    type="text"
+    placeholder="Pickup Hotel / Airbnb"
+    className="w-full border rounded-xl p-4"
+  />
 
-                <div className="flex flex-col md:grid md:grid-cols-2 gap-4">
+  <select className="w-full border rounded-xl p-4">
+    <option>Santiago → Valparaíso</option>
+    <option>Valparaíso → Santiago</option>
+  </select>
 
-  <div className="w-full">
-    <label className="block text-sm font-medium mb-2">
-      Date
-    </label>
+  <input
+    type="date"
+    className="w-full border border-gray-300 rounded-xl p-4"
+  />
 
-    <input
-      type="date"
-      className="w-full h-14 border border-gray-300 rounded-xl px-4"
-    />
+  <input
+    type="time"
+    className="w-full border border-gray-300 rounded-xl p-4"
+  />
+
+  <div className="flex flex-col md:grid md:grid-cols-2 gap-4">
+
+    <select className="w-full h-14 border border-gray-300 rounded-xl px-4">
+      <option>1 Passenger</option>
+      <option>2 Passengers</option>
+      <option>3 Passengers</option>
+      <option>4 Passengers</option>
+    </select>
+
+    <select className="w-full h-14 border border-gray-300 rounded-xl px-4">
+      <option>1 Suitcase</option>
+      <option>2 Suitcases</option>
+      <option>3 Suitcases</option>
+      <option>4 Suitcases</option>
+    </select>
+
   </div>
 
-  <div className="w-full">
-    <label className="block text-sm font-medium mb-2">
-      Time
-    </label>
+  <input
+    type="text"
+    placeholder="Full Name"
+    className="w-full border rounded-xl p-4"
+  />
 
-    <input
-      type="time"
-      className="w-full h-14 border border-gray-300 rounded-xl px-4"
-    />
-  </div>
+  <input
+    type="email"
+    placeholder="Email"
+    className="w-full border rounded-xl p-4"
+  />
+
+  <input
+    type="text"
+    placeholder="WhatsApp Number"
+    className="w-full border rounded-xl p-4"
+  />
 
 </div>
-
-                <div className="flex flex-col md:grid md:grid-cols-2 gap-4">
-
-  <select className="w-full h-14 border border-gray-300 rounded-xl px-4">
-                    <option>1 Passenger</option>
-                    <option>2 Passengers</option>
-                    <option>3 Passengers</option>
-                    <option>4 Passengers</option>
-                  </select>
-
-                 <select className="w-full h-14 border border-gray-300 rounded-xl px-4">
-                    <option>1 Suitcase</option>
-                    <option>2 Suitcases</option>
-                    <option>3 Suitcases</option>
-                    <option>4 Suitcases</option>
-                  </select>
-
-                </div>
-
-                <input
-                  type="text"
-                  placeholder="Full Name"
-                  className="w-full border rounded-xl p-4"
-                />
-
-                <input
-                  type="email"
-                  placeholder="Email"
-                  className="w-full border rounded-xl p-4"
-                />
-
-                <input
-                  type="text"
-                  placeholder="WhatsApp Number"
-                  className="w-full border rounded-xl p-4"
-                />
-
-              </div>
 
               <div className="mt-8 flex justify-between items-center">
 
@@ -183,7 +168,7 @@ export default function Home() {
                   </p>
 
                  <p className="text-5xl font-bold text-blue-700">
-  USD 150
+  USD 180
 </p>
 
 <p className="text-sm text-gray-500">
