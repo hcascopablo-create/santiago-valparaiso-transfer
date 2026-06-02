@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Santiago Valparaiso Transfer",
+  title: "Private Transfer Santiago to Valparaiso | USD 180",
   description:
-    "Private transfer between Santiago and Valparaiso. Up to 4 passengers. Available 24/7.",
+    "Private transportation between Santiago, Valparaiso and Viña del Mar. Fixed price, door-to-door service, 24/7 availability.",
 };
 
 export default function RootLayout({
