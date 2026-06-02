@@ -305,6 +305,97 @@ Available 24/7.
     </div>
 
   </div>
+  <section className="bg-white py-20">
+  <div className="max-w-7xl mx-auto px-8">
+
+    <div className="text-center mb-12">
+      <h2 className="text-4xl font-bold">
+        Why Choose Us?
+      </h2>
+    </div>
+
+    <div className="grid md:grid-cols-4 gap-8">
+
+      <div className="text-center">
+        <h3 className="font-bold text-xl mb-3">
+          Fixed Price
+        </h3>
+        <p>
+          No hidden fees. USD 180 per vehicle.
+        </p>
+      </div>
+
+      <div className="text-center">
+        <h3 className="font-bold text-xl mb-3">
+          Door to Door
+        </h3>
+        <p>
+          Pickup from any hotel or Airbnb in Santiago.
+        </p>
+      </div>
+
+      <div className="text-center">
+        <h3 className="font-bold text-xl mb-3">
+          Private Service
+        </h3>
+        <p>
+          Exclusive vehicle for your group only.
+        </p>
+      </div>
+
+      <div className="text-center">
+        <h3 className="font-bold text-xl mb-3">
+          Available 24/7
+        </h3>
+        <p>
+          Day and night transfers every day.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section className="bg-slate-100 py-20">
+  <div className="max-w-6xl mx-auto px-8">
+
+    <h2 className="text-4xl font-bold text-center mb-12">
+      Customer Reviews
+    </h2>
+
+    <div className="grid md:grid-cols-3 gap-8">
+
+      <div className="bg-white p-6 rounded-3xl shadow">
+        <p>
+          "Excellent service. Driver arrived on time and the vehicle was very comfortable."
+        </p>
+        <p className="mt-4 font-bold">
+          ★★★★★ Michael - USA
+        </p>
+      </div>
+
+      <div className="bg-white p-6 rounded-3xl shadow">
+        <p>
+          "Easy booking process and great communication through WhatsApp."
+        </p>
+        <p className="mt-4 font-bold">
+          ★★★★★ Sarah - Australia
+        </p>
+      </div>
+
+      <div className="bg-white p-6 rounded-3xl shadow">
+        <p>
+          "The best way to travel between Santiago and Valparaíso."
+        </p>
+        <p className="mt-4 font-bold">
+          ★★★★★ David - UK
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 </footer>
 
 <a
