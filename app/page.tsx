@@ -1,6 +1,40 @@
 
 
+"use client";
+
+import { useState } from "react";
+
 export default function Home() {
+  const [pickup, setPickup] = useState("");
+const [route, setRoute] = useState("Santiago → Valparaíso");
+const [date, setDate] = useState("");
+const [time, setTime] = useState("");
+const [passengers, setPassengers] = useState("1");
+const [suitcases, setSuitcases] = useState("1");
+const [name, setName] = useState("");
+const [email, setEmail] = useState("");
+const [whatsapp, setWhatsapp] = useState("");
+const whatsappMessage = encodeURIComponent(`
+NEW BOOKING REQUEST
+
+Name: ${name}
+
+Pickup: ${pickup}
+
+Route: ${route}
+
+Date: ${date}
+
+Time: ${time}
+
+Passengers: ${passengers}
+
+Suitcases: ${suitcases}
+
+Email: ${email}
+
+WhatsApp: ${whatsapp}
+`);
   return (
     <main>
       
@@ -58,9 +92,11 @@ export default function Home() {
               </h2>
 
               <p className="mt-8 text-xl text-white max-w-xl">
-                Safe. Comfortable. Fixed price.
-                Private transportation between Santiago and
-                Valparaíso for up to 4 passengers.
+                Private door-to-door transportation between
+Santiago, Valparaíso and Viña del Mar.
+
+Fixed price. Up to 4 passengers.
+Available 24/7.
               </p>
 
               <div className="mt-12 grid grid-cols-2 gap-6 max-w-lg">
@@ -101,37 +137,55 @@ export default function Home() {
 
                 
 
-  <input
-    type="text"
-    placeholder="Pickup Hotel / Airbnb"
-    className="w-full border rounded-xl p-4"
-  />
+ <input
+  type="text"
+  placeholder="Pickup Hotel / Airbnb"
+  value={pickup}
+  onChange={(e) => setPickup(e.target.value)}
+  className="w-full border rounded-xl p-4"
+/>
 
-  <select className="w-full border rounded-xl p-4">
+  <select
+  value={route}
+  onChange={(e) => setRoute(e.target.value)}
+  className="w-full border rounded-xl p-4"
+>
     <option>Santiago → Valparaíso</option>
     <option>Valparaíso → Santiago</option>
   </select>
 
-  <input
-    type="date"
-    className="w-full border border-gray-300 rounded-xl p-4"
-  />
+ <input
+  type="date"
+  value={date}
+  onChange={(e) => setDate(e.target.value)}
+  className="w-full border border-gray-300 rounded-xl p-4"
+/>
 
   <input
-    type="time"
-    className="w-full border border-gray-300 rounded-xl p-4"
-  />
+  type="time"
+  value={time}
+  onChange={(e) => setTime(e.target.value)}
+  className="w-full border border-gray-300 rounded-xl p-4"
+/>
 
   <div className="flex flex-col md:grid md:grid-cols-2 gap-4">
 
-    <select className="w-full h-14 border border-gray-300 rounded-xl px-4">
+    <select
+  value={passengers}
+  onChange={(e) => setPassengers(e.target.value)}
+  className="w-full h-14 border border-gray-300 rounded-xl px-4"
+>
       <option>1 Passenger</option>
       <option>2 Passengers</option>
       <option>3 Passengers</option>
       <option>4 Passengers</option>
     </select>
 
-    <select className="w-full h-14 border border-gray-300 rounded-xl px-4">
+    <select
+  value={suitcases}
+  onChange={(e) => setSuitcases(e.target.value)}
+  className="w-full h-14 border border-gray-300 rounded-xl px-4"
+>
       <option>1 Suitcase</option>
       <option>2 Suitcases</option>
       <option>3 Suitcases</option>
@@ -140,21 +194,27 @@ export default function Home() {
 
   </div>
 
-  <input
-    type="text"
-    placeholder="Full Name"
-    className="w-full border rounded-xl p-4"
-  />
+<input
+  type="text"
+  placeholder="Full Name"
+  value={name}
+  onChange={(e) => setName(e.target.value)}
+  className="w-full border rounded-xl p-4"
+/>
 
   <input
     type="email"
     placeholder="Email"
+    value={email}
+    onChange={(e) => setEmail(e.target.value)}
     className="w-full border rounded-xl p-4"
   />
 
   <input
     type="text"
     placeholder="WhatsApp Number"
+    value={whatsapp}
+    onChange={(e) => setWhatsapp(e.target.value)}
     className="w-full border rounded-xl p-4"
   />
 
@@ -179,7 +239,10 @@ export default function Home() {
               </div>
 
               <a
-  href="/review"
+  
+  href={`https://wa.me/56932360009?text=${whatsappMessage}`}
+  target="_blank"
+  rel="noopener noreferrer"
   className="block text-center w-full mt-6 bg-slate-900 hover:bg-slate-800 text-white py-4 rounded-xl font-bold"
 >
   Check Availability
@@ -218,6 +281,15 @@ export default function Home() {
           <li>Valparaíso → Santiago</li>
           <li>24/7 Availability</li>
           <li>Private Transfer</li>
+          <div className="mt-10">
+  <p className="text-5xl font-bold text-white">
+    USD 180
+  </p>
+
+  <p className="text-white mt-2">
+    Fixed price per vehicle
+  </p>
+</div>
         </ul>
       </div>
 
@@ -236,8 +308,9 @@ export default function Home() {
 </footer>
 
 <a
-  href="https://wa.me/56932360009"
-  target="_blank"
+  href={`https://wa.me/56932360009?text=${whatsappMessage}`}
+target="_blank"
+rel="noopener noreferrer"
   className="fixed bottom-6 right-6 bg-green-500 text-white px-6 py-4 rounded-full shadow-xl font-bold z-50"
 >
   WhatsApp
