@@ -28,16 +28,20 @@ export default function ReviewPage() {
 
               <p><strong>Time:</strong> Selected Time</p>
 
-              <p><strong>Passengers:</strong> Up to 4</p>
+              <p><strong>Passengers:</strong> Maximum 4</p>
 
-              <p><strong>Suitcases:</strong> Up to 4</p>
+<p><strong>Suitcases:</strong> Maximum 4 large suitcases</p>
+
+<p><strong>Service:</strong> Private Door-to-Door Transfer</p>
+
+<p><strong>Availability:</strong> 24/7</p>
 
             </div>
 
             <div className="mt-8 text-right">
 
               <p className="text-4xl font-bold text-blue-700">
-                USD 150
+                USD 180
               </p>
 
             </div>
@@ -50,12 +54,34 @@ export default function ReviewPage() {
               Payment Options
             </h2>
 
-            <a
-  href="/confirmed"
-  className="block text-center w-full bg-yellow-400 py-4 rounded-xl font-bold mb-4"
+<a
+  href="https://wa.me/56932360009?text=Hello%20I%20would%20like%20to%20book%20a%20transfer%20between%20Santiago%20and%20Valparaiso"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block text-center w-full bg-green-500 text-white py-4 rounded-xl font-bold mb-4"
 >
-  Continue
+  Book via WhatsApp
 </a>
+<div className="border rounded-xl p-6 mb-4">
+
+  <h3 className="font-bold mb-3">
+    Pay with PayPal
+  </h3>
+
+  <p className="mb-4">
+    Secure online payment.
+  </p>
+
+  <a
+    href="TU_LINK_DE_PAYPAL"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block text-center w-full bg-blue-600 text-white py-3 rounded-xl font-bold"
+  >
+    Pay USD 180
+  </a>
+
+</div>
 
             <div className="border rounded-xl p-6">
 
