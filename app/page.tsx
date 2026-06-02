@@ -83,13 +83,17 @@ WhatsApp: ${whatsapp}
                 Private Transfer
               </p>
 
-              <h2 className="mt-4 text-4xl md:text-7xl font-bold text-white leading-tight">
-                Between
-                <br />
-                Santiago &
-                <br />
-                Valparaíso
-              </h2>
+      <h2 className="mt-4 text-4xl md:text-7xl font-bold text-white leading-tight">
+  Private Transfer
+  <br />
+  Santiago to
+  <br />
+  Valparaíso
+</h2>
+
+<div className="inline-block mt-4 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-white font-semibold">
+  ★ Rated 5 Stars by International Travelers
+</div>
 
               <p className="mt-8 text-xl text-white max-w-xl">
                 Private door-to-door transportation between
@@ -227,7 +231,7 @@ Available 24/7.
                     Fixed Price
                   </p>
 
-                 <p className="text-5xl font-bold text-blue-700">
+                 <p className="text-6xl font-extrabold text-blue-700">
   USD 180
 </p>
 
