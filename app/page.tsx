@@ -24,7 +24,7 @@ export default function Home() {
               <h1 className="font-bold text-xl text-white">
                 SANTIAGO
               </h1>
-              <p className="text-sm text-white">
+              <p className="font-bold text-xl text-white">
                 VALPARAISO TRANSFER
               </p>
             </div>
@@ -46,11 +46,11 @@ export default function Home() {
 
             <div className="pt-12">
 
-              <p className="uppercase tracking-widest text-white font-semibold">
+              <p className="uppercase tracking-widest text-white font-bold">
                 Private Transfer
               </p>
 
-              <h2 className="mt-4 text-5xl md:text-7xl font-bold text-white leading-tight">
+              <h2 className="mt-4 text-4xl md:text-7xl font-bold text-white leading-tight">
                 Between
                 <br />
                 Santiago &
@@ -88,9 +88,9 @@ export default function Home() {
 
             {/* BOOKING CARD */}
 
-            <div className="bg-white rounded-3xl shadow-2xl p-8 max-w-lg w-full ml-auto">
+            <div className="bg-white rounded-3xl shadow-2xl p-6 md:p-8 w-full max-w-md lg:max-w-lg mx-auto lg:ml-auto">
 
-              <h3 className="text-3xl font-bold">
+              <h3 className="text-2xl md:text-3xl font-bold mb-4">
   Book Your Transfer
 </h3>
 
@@ -111,30 +111,42 @@ export default function Home() {
                   <option>Valparaíso → Santiago</option>
                 </select>
 
-                <div className="grid grid-cols-2 gap-4">
+                <div className="flex flex-col md:grid md:grid-cols-2 gap-4">
 
-                  <input
-                    type="date"
-                    className="border rounded-xl p-4"
-                  />
+  <div className="w-full">
+    <label className="block text-sm font-medium mb-2">
+      Date
+    </label>
 
-                  <input
-                    type="time"
-                    className="border rounded-xl p-4"
-                  />
+    <input
+      type="date"
+      className="w-full h-14 border border-gray-300 rounded-xl px-4"
+    />
+  </div>
 
-                </div>
+  <div className="w-full">
+    <label className="block text-sm font-medium mb-2">
+      Time
+    </label>
 
-                <div className="grid grid-cols-2 gap-4">
+    <input
+      type="time"
+      className="w-full h-14 border border-gray-300 rounded-xl px-4"
+    />
+  </div>
 
-                  <select className="border rounded-xl p-4">
+</div>
+
+                <div className="flex flex-col md:grid md:grid-cols-2 gap-4">
+
+  <select className="w-full h-14 border border-gray-300 rounded-xl px-4">
                     <option>1 Passenger</option>
                     <option>2 Passengers</option>
                     <option>3 Passengers</option>
                     <option>4 Passengers</option>
                   </select>
 
-                  <select className="border rounded-xl p-4">
+                 <select className="w-full h-14 border border-gray-300 rounded-xl px-4">
                     <option>1 Suitcase</option>
                     <option>2 Suitcases</option>
                     <option>3 Suitcases</option>
