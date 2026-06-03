@@ -323,9 +323,9 @@ Available 24/7.
 
     <div className="text-center mb-12">
   <div className="text-center mb-12">
-  <h2 className="text-4xl font-bold">
-    Why Choose Us?
-  </h2>
+  <h2 className="text-4xl font-bold text-slate-900">
+  Why Choose Us?
+</h2>
 </div>
     </div>
 
