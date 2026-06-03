@@ -423,7 +423,7 @@ Available 24/7.
 </div>
 
       <div className="bg-blue p-6 rounded-3xl shadow">
-        <p>
+        <p className="text-slate-700">
           "Easy booking process and great communication through WhatsApp."
         </p>
         <p className="mt-4 font-bold text-slate-900">
@@ -432,7 +432,7 @@ Available 24/7.
       </div>
 
       <div className="bg-blue p-6 rounded-3xl shadow">
-        <p>
+        <p className="text-slate-700">
           "The best way to travel between Santiago and Valparaíso."
         </p>
         <p className="mt-4 font-bold text-slate-900">
