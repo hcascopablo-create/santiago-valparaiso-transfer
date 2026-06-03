@@ -426,7 +426,7 @@ Available 24/7.
         <p>
           "Easy booking process and great communication through WhatsApp."
         </p>
-        <p className="text-slate-700">
+        <p className="mt-4 font-bold text-slate-900">
           ★★★★★ Sarah - Australia
         </p>
       </div>
@@ -435,7 +435,7 @@ Available 24/7.
         <p>
           "The best way to travel between Santiago and Valparaíso."
         </p>
-        <p className="text-slate-700">
+        <p className="mt-4 font-bold text-slate-900">
           ★★★★★ David - UK
         </p>
       </div>
