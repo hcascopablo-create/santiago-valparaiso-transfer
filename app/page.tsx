@@ -329,10 +329,10 @@ Available 24/7.
 </div>
     </div>
 
-    <div className="grid md:grid-cols-4 gap-8">
+    <div className="grid md:grid-cols-4 gap-8 text-blue-700">
 
       <div className="text-center">
-        <h3 className="font-bold text-xl mb-3">
+        <h3 className="font-bold text-xl mb-3 text-blue-700">
           Fixed Price
         </h3>
         <p>
@@ -341,7 +341,7 @@ Available 24/7.
       </div>
 
       <div className="text-center">
-        <h3 className="font-bold text-xl mb-3">
+        <h3 className="font-bold text-xl mb-3 text-blue-700">
           Door to Door
         </h3>
         <p>
@@ -350,7 +350,7 @@ Available 24/7.
       </div>
 
       <div className="text-center">
-        <h3 className="font-bold text-xl mb-3">
+        <h3 className="font-bold text-xl mb-3 text-blue-700">
           Private Service
         </h3>
         <p>
