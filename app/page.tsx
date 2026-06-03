@@ -382,15 +382,15 @@ Available 24/7.
 
     <div className="grid md:grid-cols-3 gap-8">
 
-      <div className="bg-white p-6 rounded-2xl shadow">
+      <div className="bg-red p-6 rounded-2xl shadow">
         Santiago Airport → Valparaíso
       </div>
 
-      <div className="bg-white p-6 rounded-2xl shadow">
+      <div className="bg-red p-6 rounded-2xl shadow">
         Santiago Airport → Viña del Mar
       </div>
 
-      <div className="bg-white p-6 rounded-2xl shadow">
+      <div className="bg-red p-6 rounded-2xl shadow">
         Santiago Downtown → Cruise Port
       </div>
 
