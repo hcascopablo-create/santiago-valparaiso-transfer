@@ -1,6 +1,8 @@
 
 
 "use client";
+import { FaWhatsapp } from "react-icons/fa";
+
 
 import { useState } from "react";
 
@@ -249,7 +251,7 @@ Available 24/7.
   rel="noopener noreferrer"
   className="block text-center w-full mt-6 bg-slate-900 hover:bg-slate-800 text-white py-4 rounded-xl font-bold"
 >
-  Check Availability
+  Request Reservation
 </a>
 
             </div>
@@ -276,26 +278,33 @@ Available 24/7.
       </div>
 
       <div>
-        <h3 className="font-bold mb-4">
-          Service
-        </h3>
+  <h3 className="font-bold mb-4">
+    Service
+  </h3>
 
-        <ul className="space-y-2 text-gray-300">
-          <li>Santiago → Valparaíso</li>
-          <li>Valparaíso → Santiago</li>
-          <li>24/7 Availability</li>
-          <li>Private Transfer</li>
-          <div className="mt-10">
-  <p className="text-5xl font-bold text-white">
-    USD 180
-  </p>
+  <ul className="space-y-2 text-gray-300">
+    <li>Santiago → Valparaíso</li>
+    <li>Valparaíso → Santiago</li>
+    <li>24/7 Availability</li>
+    <li>Private Transfer</li>
+  </ul>
 
-  <p className="text-white mt-2">
-    Fixed price per vehicle
-  </p>
+  <div className="mt-10">
+    <p className="text-5xl font-bold text-white">
+      USD 180
+    </p>
+
+    <div className="mt-6 flex justify-center gap-6 text-gray-300 text-sm">
+      <span>✓ Secure Booking</span>
+      <span>✓ 24/7 Support</span>
+      <span>✓ Fixed Price</span>
+    </div>
+
+    <p className="text-white mt-2">
+      Fixed price per vehicle
+    </p>
+  </div>
 </div>
-        </ul>
-      </div>
 
       <div>
         <h3 className="font-bold mb-4">
@@ -313,9 +322,11 @@ Available 24/7.
   <div className="max-w-7xl mx-auto px-8">
 
     <div className="text-center mb-12">
-      <h2 className="text-4xl font-bold">
-        Why Choose Us?
-      </h2>
+  <div className="text-center mb-12">
+  <h2 className="text-4xl font-bold">
+    Why Choose Us?
+  </h2>
+</div>
     </div>
 
     <div className="grid md:grid-cols-4 gap-8">
@@ -360,7 +371,39 @@ Available 24/7.
 
   </div>
 </section>
+
+
+<section className="bg-slate-50 py-20">
+  <div className="max-w-6xl mx-auto px-8">
+
+    <h2 className="text-4xl font-bold text-center mb-12">
+      Popular Routes
+    </h2>
+
+    <div className="grid md:grid-cols-3 gap-8">
+
+      <div className="bg-white p-6 rounded-2xl shadow">
+        Santiago Airport → Valparaíso
+      </div>
+
+      <div className="bg-white p-6 rounded-2xl shadow">
+        Santiago Airport → Viña del Mar
+      </div>
+
+      <div className="bg-white p-6 rounded-2xl shadow">
+        Santiago Downtown → Cruise Port
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
 <section className="bg-slate-100 py-20">
+
+
+
+
   <div className="max-w-6xl mx-auto px-8">
 
     <h2 className="text-4xl font-bold text-center mb-12">
@@ -369,29 +412,30 @@ Available 24/7.
 
     <div className="grid md:grid-cols-3 gap-8">
 
-      <div className="bg-white p-6 rounded-3xl shadow">
-        <p>
-          "Excellent service. Driver arrived on time and the vehicle was very comfortable."
-        </p>
-        <p className="mt-4 font-bold">
-          ★★★★★ Michael - USA
-        </p>
-      </div>
+      <div className="bg-blue p-6 rounded-3xl shadow">
+  <p className="text-slate-700">
+    "Excellent service. Driver arrived on time and the vehicle was very comfortable."
+  </p>
 
-      <div className="bg-white p-6 rounded-3xl shadow">
+  <p className="mt-4 font-bold text-slate-900">
+    ★★★★★ Michael - USA
+  </p>
+</div>
+
+      <div className="bg-blue p-6 rounded-3xl shadow">
         <p>
           "Easy booking process and great communication through WhatsApp."
         </p>
-        <p className="mt-4 font-bold">
+        <p className="text-slate-700">
           ★★★★★ Sarah - Australia
         </p>
       </div>
 
-      <div className="bg-white p-6 rounded-3xl shadow">
+      <div className="bg-blue p-6 rounded-3xl shadow">
         <p>
           "The best way to travel between Santiago and Valparaíso."
         </p>
-        <p className="mt-4 font-bold">
+        <p className="text-slate-700">
           ★★★★★ David - UK
         </p>
       </div>
@@ -404,11 +448,11 @@ Available 24/7.
 
 <a
   href={`https://wa.me/56932360009?text=${whatsappMessage}`}
-target="_blank"
-rel="noopener noreferrer"
-  className="fixed bottom-6 right-6 bg-green-500 text-white px-6 py-4 rounded-full shadow-xl font-bold z-50"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full shadow-xl flex items-center justify-center z-50"
 >
-  WhatsApp
+  <FaWhatsapp size={34} />
 </a>
     </main>
   );
