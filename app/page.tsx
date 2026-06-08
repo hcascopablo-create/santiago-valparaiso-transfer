@@ -55,14 +55,13 @@ WhatsApp: ${whatsapp}
         <header className="relative z-20">
           <div className="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
 
-            <div>
-              <h1 className="font-bold text-xl text-white">
-                SANTIAGO
-              </h1>
-              <p className="font-bold text-xl text-white">
-                VALPARAISO TRANSFER
-              </p>
-            </div>
+           <div>
+  <img
+    src="/logo.png"
+    alt="Santiago Valparaiso Transfer"
+    className="h-24 w-auto"
+  />
+</div>
 
             <div className="font-semibold text-white">
               +56 9 3236 0009
