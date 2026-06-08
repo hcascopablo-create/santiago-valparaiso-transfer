@@ -63,10 +63,7 @@ WhatsApp: ${whatsapp}
   />
 </div>
 
-            <div className="font-semibold text-white">
-              +56 9 3236 0009
-            </div>
-
+           
           </div>
         </header>
 
