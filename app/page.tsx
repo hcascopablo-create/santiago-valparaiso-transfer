@@ -59,7 +59,7 @@ WhatsApp: ${whatsapp}
   <img
     src="/logo.png"
     alt="Santiago Valparaiso Transfer"
-    className="h-24 w-auto"
+    className="h-48 w-auto"
   />
 </div>
 
